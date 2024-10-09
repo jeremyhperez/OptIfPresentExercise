@@ -33,6 +33,6 @@ public class FileService {
 																   .equalsIgnoreCase("Carmen SanDiego")).findAny();
 		
 		carmenLocation.ifPresentOrElse(location -> System.out.println("Carmen SanDiego is in..." + location.getCountryOpt().orElse("Unkown")),
-																	 () -> System.out.println("Galdang, just missed her!"));
+																	 () -> System.out.println("Galdang, you just missed her!"));
 	}
 }
